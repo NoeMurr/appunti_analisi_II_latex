@@ -1,0 +1,56 @@
+\documentclass{article}	
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Definizioni e Teoremi di Analisi Matematica II}
+\author{Noè Murr}
+\date{\today}
+
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	\pagenumbering{arabic}
+	\part*{Teoremi}
+		Questo capitolo conterrà l'insieme dei teoremi del corso di \mbox{analisi matematica II}. 
+		Ogni parte sarà divisa in capitoli i quali saranno divisi in sezioni le quale raggrupperanno i diversi teoremi. 
+		Solo i teoremi più importanti saranno muniti di dimostrazione.
+		
+		\section{Teoremi sulle Equazioni Differenziali Ordinarie}
+		
+			\subsection{Teorema di Peano per l'esistenza di una soluzione locale di un problema di Cauchy in cui l'equazione differenziale è a variabili separabili} \label{t1}
+			
+				Si consideri il seguente problema di Cauchy:
+				\begin{equation}
+					\begin{cases} 
+						y' = f(x)g(x) \\
+						y(x_0) = y_0
+					 \end{cases}
+				\end{equation}
+				dove $(x_0, y_0) \in \mathbb{R}$, $f$ è una funzione continua su un intervallo aperto I contenente $x_0$ e g è una funzione continua su un intervallo aperto J contenente $y_0$. Allora il problema di Cauchy assegnato ha almeno una soluzione $y \in C^1(I')$ definita su un intervallo aperto $I' \subseteq I$ contenete $x_0$.				
+			
+			\subsection{Primo Teorema di esistenza ed unicità locale della soluzione di un problema di Cauchy in cui l'equazione differenziale è a variabili separabili} \label{t2}
+			
+				Supponendo che tutte le ipotesi del teorema \ref{t1} siano soddisfatte allora. Se $g(y_0) \neq 0$  esiste un intervallo aperto I'contenuto in I e contenente $x_0$ e un intervallo aperto J' contenuto in J e contenente $y_0$ tale che la soluzione del problema di Cauchy sia unica in $I' \times J'$.
+				
+			\subsection{Secondo Teorema di esistenza ed unicità locale della soluzione di un problema di Cauchy in cui l'equazione differenziale è a variabili separabili}
+			
+				Supponiamo che le ipotesi della sezione \ref{t1} siano vere allora se $g \in C^1(J)$ o $g$ è una funzione lipschitziana (vedi \ref{d1}) su J, allora il problema di Cauchy ha soluzione unica in un intervallo aperto I' contenente $x_0$.
+			
+	\part*{Definizioni}
+		\section{Definizioni sulle Equazioni Differenziali Ordinarie}
+		
+			\subsection{Definizione di Funzione Lipschitziana}\label{d1}
+			
+				Sia $f$ una funzione di una variabile $x$ definita su $D \subseteq \mathbb{R}$ a valori in $\mathbb{R}$. Diciamo che $f$ è lipschitziana su $D$ se esiste una costante $L \ge 0$ tale che:
+				\begin{equation*}
+						\forall x_1, x_2 \in D \rightarrow \lvert f(x_1) - f(x_2) \rvert \le L * \lvert x_1 - x_2 \rvert
+				\end{equation*}
+				
+\end{document}
